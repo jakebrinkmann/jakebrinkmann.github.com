@@ -9,10 +9,19 @@ div.bin {
     max-width: 800px;
     padding: 5px;
 }
+h1 {
+    display: inline-block;
+}
 h2 {
     background: #d6604d;
     border-top: 1px solid #fddbc7;
     border-bottom: 1px solid #fddbc7;
     padding: 8px;
+}
+span.sub {
+    display: inline-block;
+    margin-top: 10px;
+    line-height: 1.5;
+    padding: 8px 25px;
 }
 
