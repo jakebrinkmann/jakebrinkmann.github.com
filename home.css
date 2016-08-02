@@ -5,4 +5,7 @@ div.bin {
     background: #e0e0e0;
     border: 1px solid #d6604d;
     border-radius: 10px;
+    margin: 10px auto;
+    max-width: 800px;
 }
+
