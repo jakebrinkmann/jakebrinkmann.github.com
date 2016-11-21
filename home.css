@@ -81,6 +81,6 @@ span.sub {
     border-top:0;
 }
 .vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
-    height:200px;
+    height:auto;
     border:1px solid #616161;
 }
