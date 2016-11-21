@@ -3,7 +3,7 @@ body {
 }
 div.bin {
     background: white;
-    border: 2px solid #d6604d;
+    border: 2px solid #ccc;
     border-radius: 10px;
     margin: 10px auto;
     max-width: 800px;
@@ -36,8 +36,8 @@ span.sub {
     display:block;
     font-size:24px;
     line-height:24px;
-    background:#d6604d;
-    border:1px solid #542437;
+    background:#ccc;
+    border:1px solid #616161;
     color:#000;
     font-weight:bolder;;
     cursor:pointer;
@@ -45,7 +45,7 @@ span.sub {
     -moz-transition: all .2s ease-out;
 }
 .accordion ul li label:hover, .accordion [type=radio]:checked ~ label, .accordion [type=checkbox]:checked ~ label {
-    background:#C02942;
+    background:#4CAF50;
     color:#FFF;
 }
 .accordion .content {
@@ -56,7 +56,7 @@ span.sub {
     -moz-transition: all .5s ease-out;
 }
 .accordion a {
-    color:#542437;
+    color:#616161;
     padding:0;
     margin:10px 0;
 }
@@ -74,13 +74,13 @@ span.sub {
     border-bottom:0;
 }
 .vertical ul li label:hover {
-    border:1px solid #542437; /* We don't want the border to disappear on hover */
+    border:1px solid #616161; /* We don't want the border to disappear on hover */
 }
 .vertical ul li .content {
     height:0px;
     border-top:0;
 }
 .vertical [type=radio]:checked ~ label ~ .content, .vertical [type=checkbox]:checked ~ label ~ .content {
-    height:300px;
-    border:1px solid #542437;
+    height:200px;
+    border:1px solid #616161;
 }
