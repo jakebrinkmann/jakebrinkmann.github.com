@@ -1,10 +1,46 @@
 
 body {
+  color: #aaa;
   background-color: #1b1b1b;
 }
 
 a {
   color: #9ebcff;
+}
+
+/* On smaller screens, display centered */
+div.navbar {
+  align-items: center;
+  text-align: center;
+
+  padding: 10px 0;
+  margin: 0;
+  border-bottom: 6px solid #000;
+}
+
+/* Larger screens dislpay upper-left */
+@media screen and (min-width: 881px) {
+  div.navbar {
+    display: block;
+  }
+}
+
+.navbar object {
+  width: 128px;
+}
+
+.hero li {
+  border: 2px solid #333;
+  border-radius: 5px;
+  width: 128px;
+  height: 32px;
+  margin: 20px;
+  float: left;
+  background: #5f5f5f;
+}
+
+.hero li a:hover {
+  background: #ffcc00;
 }
 
 .footer {
