@@ -47,17 +47,19 @@
 <body>
     <section class="navbar">
         <object data="assets/img/safari-pinned-tab.svg" type="image/svg+xml"
-            id="logo" onload="styleLogo()">
+            id="logo" onload="styleLogo('logo')">
         </object>
     </section>
     <section class="hero">
-        <h2 class="page-title">Get performant unified numerical-processing solutions</h2>
+        <h2 class="page-title">Get performant end-to-end numerical processing pipelines</h2>
         <ul>
             <h3>Ingest, Process, and Visualize diverse datasets without delay!</h3>
             <div class="datacenter">
                 <!-- Data Center by Gan Khoon Lay from the Noun Project
                     https://thenounproject.com/term/-/968729/ -->
-                <img src="assets/img/datacenter.svg" />
+                <object data="assets/img/datacenter.svg" type="image/svg+xml"
+                    id="hero-icon" onload="styleLogo('hero-icon', '#2F2F2F')">
+                </object>
             </div>
             <li>
                 <a href="#contact">
@@ -71,76 +73,75 @@
                 </a>
             </li>
             <p class="convincing"><br>
-                Last year alone, our pipelines helped petabytes of data get
-                processed for companies providing rich, interactive data
+                Pipelines help petabytes of data get
+                processed for companies to provide rich, interactive data
                 visualizations to their customers around the world
             </p>
         </ul>
     </section>
-    <section class="content">
-        <div class="experience">
-            <h2>Launch your data processing to the stratosphere</h2>
+    <section class="content" id="experience">
+        <h2>Launch your data processing to the
+            <span class="emphasis">stratosphere</span></h2>
 
-            <h3>You gxnerate innovative and informative data products, but...</h3>
-            <p>
-                You have your eyes on the future. You want to go bigger, more
-                information, more products, more answers.
-            </p>
+        <h3>You generate innovative and informative data products, but...</h3>
+        <p>
+            You have your eyes on the future. You want to go bigger, more
+            information, more products, more answers.
+        </p>
 
-            <h3>Data Science is where the fun is at</h3>
-            <p></p>
+        <h3>Data Science is where the fun is at</h3>
+        <p>Fear of missing out!</p>
 
-            <h3></h3>
-            <p></p>
+        <h3>Tell me there's a better way!@</h3>
+        <p>There is!</p>
 
-            <h3>That's SnakeBytes:</h3>
-            <p>
+        <h3>That's SnakeBytes:</h3>
+        <p>
 
-                We like to work with you on the hard stuff
-            </p>
+            We like to work with you on the hard stuff
+        </p>
 
-            <h3> the data will set you free</h3>
-            <p></p>
-        </div>
-        <div class="details">
-            <h1>Introducing SnakeBytes Technology Ltd.</h1>
-            <h3>Your favorite numerical-processing data shop</h3>
-            <ul>
-                <li>
-                    <h4>Ingest</h3>
-                    <p>Build diverse data products, you need to be able to collect data points from millions of users and process the results in near real-time. </p>
-                </li>
-                <li>
-                    <h4>Process</h3>
-                    <p>Scalable to produce Diverse data products.</p>
-                </li>
-                <li>
-                    <h4>Visualize</h3>
-                    <p>Explore and understand, without having to wait.</p>
-                </li>
-            </ul>
-        </div>
-        <div class="services">
-            <h3>Services</h3>
-            <ul>
-                <li>
-                    <h4>Full Stack Applications</h4>
-                    <p>Expert distributed systems, applications that work as websites or mobile apps</p>
-                </li><li>
-                    <h4>Python + JS</h4>
-                </li><li>
-                    <h4>Education + Training</h4>
-                    <p></p>
-                </li>
-            </ul>
-            <p>More! Innovation, experiment with new and emerging technology
-                does not hav prior experience with XYZ, many areas we're interested
-                in developing experience in, would not bill for time required to
-                get us up to speed. Run free expieriments in the past
-            </p>
-        </div>
+        <h3> the data will set you free</h3>
+        <p></p>
     </section>
-    <section class="process">
+    <section class="content" id="details">
+        <h1>Introducing SnakeBytes Technology Ltd.</h1>
+        <h3>Your favorite numerical-processing data shop</h3>
+        <ul>
+            <li>
+                <h4>Ingest</h3>
+                <p>Build diverse data products, you need to be able to collect data points from millions of users and process the results in near real-time. </p>
+            </li>
+            <li>
+                <h4>Process</h3>
+                <p>Scalable to produce Diverse data products.</p>
+            </li>
+            <li>
+                <h4>Visualize</h3>
+                <p>Explore and understand, without having to wait.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="content" id="services">
+        <h3>Services</h3>
+        <ul>
+            <li>
+                <h4>Full Stack Applications</h4>
+                <p>Expert distributed systems, applications that work as websites or mobile apps</p>
+            </li><li>
+                <h4>Python + JS</h4>
+            </li><li>
+                <h4>Education + Training</h4>
+                <p></p>
+            </li>
+        </ul>
+        <p>More! Innovation, experiment with new and emerging technology
+            does not hav prior experience with XYZ, many areas we're interested
+            in developing experience in, would not bill for time required to
+            get us up to speed. Run free expieriments in the past
+        </p>
+    </section>
+    <section class="content" id="process">
         <h3>Process</h3>
         <ul>
             <li>
@@ -149,6 +150,7 @@
             </li><li>
                 <h4>Design & Interactive Prototyping</h4>
                 <p>establish agile processes, get you working software you can use as fast as possible</p>
+                <p>We closely engage with our community and believe that open, honest, feedback results in the best entertainment.</p>
             </li><li>
                 <h4>Development & Testing</h4>
             </li><li>
@@ -159,14 +161,17 @@
     </section>
     <section class="contact">
         <div class="about">
-                digital product development agency, micro independent software vender. very small independent
+            SnakeBytes is a small independent software vender and digital product development agency, based in South Dakota, USA.
+            We love application development using network-based architecture for scaleable "big-data" numerical analysis and visualization.
         </div>
         <div class="address">
-            If you have any questions, please drop us a line:
-            <a href="mailto:hello@snakebytes.tech">hello@snakebytes.tech</a>
-
-            Something cool you want to show us? Labs is our innovation program
-            where we experiment with new and emerging technology to better serve our clients.
+            <p>
+                If you have any questions, please drop us a line:
+                <a href="mailto:hello@snakebytes.tech">hello@snakebytes.tech</a>
+            </p><p>
+                Have something cool you want to show off? SnakeBytes Labs is our innovation program
+                where we experiment with new and emerging technology to better serve our clients.
+            </p>
         </div>
     </section>
     <footer>

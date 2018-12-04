@@ -1,9 +1,20 @@
+/* CSS Properites */
+:root {
+  --main-bg-color: #1b1b1b;
+  --connect-me: #C8AD55;
+}
 
+/* Mobile First Design -------------------------------------------------------*/
 html, body {
   color: #aaa;
-  background-color: #1b1b1b;
+  background-color: var(--main-bg-color);
   margin: 0;
   padding: 0;
+  width: 100%;
+}
+
+::selection {
+  color: red;
 }
 
 a {
@@ -22,12 +33,18 @@ h2.page-title {
   font-size: xx-large ;
 }
 
-/* Parallax scrolling effect */
+.emphasis {
+  font-family: Georgia, serif;
+  font-weight: bolder;
+  color: #999;
+  font-style: oblique;
+}
+
+/* Sticky-card style scrolling effect */
 section, footer {
-  position: sticky;
-  top: 0px;
-  width: 100vw;
   display: inline-block;
+  padding: 0 1em;
+  width: 100%;
 }
 
 /* On smaller screens, display centered */
@@ -39,20 +56,6 @@ section.navbar {
   border-bottom: 6px solid #000;
 }
 
-/* Larger screens dislpay upper-left */
-@media screen and (min-width: 881px) {
-  section.navbar {
-    align-items: left;
-    text-align: left;
-  }
-
-  .datacenter img {
-    float: right;
-    position: relative;
-    z-index: -1;
-  }
-}
-
 .navbar object {
   width: 128px;
 }
@@ -60,6 +63,7 @@ section.navbar {
 section.hero {
   align-items: center;
   text-align: center;
+  background-color: #1b1b1b;
 }
 
 .hero ul {
@@ -77,7 +81,7 @@ section.hero {
   width: 146px;
   height: 48px;
 
-  margin: 20px;
+  margin: 20px 10px;
 
   float: none;
   display: inline-block;
@@ -100,6 +104,7 @@ section.hero {
 .hero li a h2 {
   font: bold 20px/20px sans-serif;
   margin: 0px;
+  padding: 5px;
 }
 
 .hero li a span {
@@ -113,7 +118,7 @@ h2.contact {
   color: #C8AD55;
 }
 
-.datacenter img {
+.datacenter object {
   width: 10vw;
   max-width: 100px;
   /* float: none; */
@@ -132,20 +137,41 @@ section.content {
   color: #0f0f0f;
 }
 
+#experience h2{
+  padding: 10px 40px;
+}
+
+#experience h3{
+  padding: 10px 40px;
+}
+
+#experience p{
+  padding: 10px 40px;
+}
+
+.content {
+  padding: auto 40px;
+}
+
 section.process {
   background: #D2D7DF;
   color: #0f0f0f;
 }
 
 section.contact {
+  padding: 30px;
   background-color: #1b1b1b;
+}
+
+div.about, div.address {
+  padding: 15px;
 }
 
 footer {
   font-size: 12px;
   text-align: right;
   color: aliceblue;
-  margin-top: 50px;
+  padding-top: 50px;
   background-color: #1b1b1b;
 }
 
@@ -154,10 +180,30 @@ p.appendix, .appendix a {
   text-decoration: none;
 }
 
-/* Control the layering of parallax views */
-section.navbar {z-index: 0;}
-section.hero {z-index: 1; background-color: #1b1b1b;}
-section.content {z-index: 1;}
-section.process {z-index: 2;}
-section.contact {z-index: 3;}
-footer {z-index: 4;}
+/* Larger Displays -------------------------------------------------------*/
+@media screen and (min-width: 881px) {
+  section.navbar {
+    align-items: left;
+    text-align: left;
+    padding: 0 30px;
+    width: 100%;
+  }
+
+  .datacenter object {
+    float: right;
+    position: relative;
+    z-index: -1;
+  }
+
+  html, body {
+    margin: 0 0;
+  }
+
+  section, footer {
+    position: sticky;
+    position: -webkit-sticky; /* Safari */
+    top: 0px;
+    padding: 30px;
+  }
+
+}
