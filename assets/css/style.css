@@ -9,7 +9,7 @@ a {
 }
 
 /* On smaller screens, display centered */
-div.navbar {
+section.navbar {
   align-items: center;
   text-align: center;
 
@@ -20,8 +20,9 @@ div.navbar {
 
 /* Larger screens dislpay upper-left */
 @media screen and (min-width: 881px) {
-  div.navbar {
-    display: block;
+  section.navbar {
+    align-items: left;
+    text-align: left;
   }
 }
 
@@ -29,21 +30,62 @@ div.navbar {
   width: 128px;
 }
 
+section.hero {
+  max-width: 800px;
+  align-items: center;
+  text-align: center;
+}
+
+.hero ul {
+  margin: 30px 30px;
+  width: 500px;
+}
+
 .hero li {
   border: 2px solid #333;
   border-radius: 5px;
+
   width: 128px;
-  height: 32px;
+  height: 48px;
+
   margin: 20px;
   float: left;
+  padding: 0px;
+  display: block;
   background: #5f5f5f;
 }
 
-.hero li a:hover {
-  background: #ffcc00;
+.hero li a {
+  position: relative;
+  display: block;
+  text-decoration: none;
+
+  width: 128px;
+  height: 48px;
+  border-radius: 5px;
 }
 
-.footer {
+.hero li a:hover {
+  background: #3f48cc;
+}
+
+.hero li a h2 {
+  font: bold 20px/20px sans-serif;
+  margin: 0px;
+}
+
+.hero li a span {
+    font: normal 9px/10px monaco, monospace;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+}
+
+section.content {
+  display: inline-block;
+}
+
+footer {
   display: block;
   font-size: 12px;
   text-align: right;
