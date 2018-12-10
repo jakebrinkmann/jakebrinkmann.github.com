@@ -1,0 +1,17 @@
+{
+  "name": "snakebytestech.github.io",
+  "version": "1.0.0",
+  "description": "Charmed Data Pipelines",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/snakebytestech/snakebytestech.github.io"
+  },
+  "author": "SnakeBytes Tech, Ltd.",
+  "license": "CC-BY-4.0",
+  "devDependencies": {
+  }
+}
