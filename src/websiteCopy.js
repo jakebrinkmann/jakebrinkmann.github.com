@@ -2,10 +2,11 @@
 export default {
   components: [
     {
-      type: 'section',
+      '<>': 'section',
       class: 'navbar',
       components: [
         {
+          '<>': 'object',
           type: 'image/svg+xml',
           data: 'assets/img/safari-pinned-tab.svg',
           id: 'logo',
@@ -14,27 +15,28 @@ export default {
       ]
     },
     {
-      type: 'section',
+      '<>': 'section',
       class: 'hero',
       components: [
         {
-          type: 'h2',
+          '<>': 'h2',
           class: 'page-title',
           value: 'Get performant end-to-end numerical processing pipelines'
         },
         {
-          type: 'ul',
+          '<>': 'ul',
           components: [
             {
-              type: 'h3',
+              '<>': 'h3',
               value:
                 'Ingest, Process, and Visualize diverse datasets without delay!'
             },
             {
-              type: 'div',
+              '<>': 'div',
               class: 'datacenter',
               components: [
                 {
+                  '<>': 'object',
                   type: 'image/svg+xml',
                   data: 'assets/img/datacenter.svg',
                   id: 'hero-icon',
@@ -43,33 +45,33 @@ export default {
               ]
             },
             {
-              type: 'li',
+              '<>': 'li',
               components: [
                 {
-                  type: 'a',
+                  '<>': 'a',
                   href: '#contact',
                   components: [
-                    { type: 'h2', class: 'contact', value: 'Contact Me' },
-                    { type: 'span', value: "Let's work together!" }
+                    { '<>': 'h2', class: 'contact', value: 'Contact Me' },
+                    { '<>': 'span', value: "Let's work together!" }
                   ]
                 }
               ]
             },
             {
-              type: 'li',
+              '<>': 'li',
               components: [
                 {
-                  type: 'a',
+                  '<>': 'a',
                   href: '#projects',
                   components: [
-                    { type: 'h2', value: 'Projects' },
-                    { type: 'span', value: 'Show me some proof' }
+                    { '<>': 'h2', value: 'Projects' },
+                    { '<>': 'span', value: 'Show me some proof' }
                   ]
                 }
               ]
             },
             {
-              type: 'p',
+              '<>': 'p',
               class: 'convincing',
               value:
                 'Pipelines help petabytes of data get processed for companies to provide rich, interactive data visualizations to their customers around the world'
@@ -79,74 +81,74 @@ export default {
       ]
     },
     {
-      type: 'section',
+      '<>': 'section',
       class: 'content',
       id: 'experience',
       components: [
         {
-          type: 'h2',
+          '<>': 'h2',
           value:
             'Launch your data processing to the <span class="emphasis">stratosphere</span>'
         },
         {
-          type: 'h3',
+          '<>': 'h3',
           value: 'You generate innovative and informative data products, but...'
         },
         {
-          type: 'p',
+          '<>': 'p',
           value:
             'You have your eyes on the future. You want to go bigger, more information, more products, more answers.'
         },
-        { type: 'h3', value: 'Data Science is where the fun is at' },
-        { type: 'p', value: 'Fear of missing out!' },
-        { type: 'h3', value: "Tell me there's a better way!@" },
-        { type: 'p', value: 'There is!' },
-        { type: 'h3', value: "That's SnakeBytes:" },
-        { type: 'p', value: 'We like to work with you on the hard stuff' },
-        { type: 'h3', value: 'the data will set you free' },
-        { type: 'p', value: '...' }
+        { '<>': 'h3', value: 'Data Science is where the fun is at' },
+        { '<>': 'p', value: 'Fear of missing out!' },
+        { '<>': 'h3', value: "Tell me there's a better way!@" },
+        { '<>': 'p', value: 'There is!' },
+        { '<>': 'h3', value: "That's SnakeBytes:" },
+        { '<>': 'p', value: 'We like to work with you on the hard stuff' },
+        { '<>': 'h3', value: 'the data will set you free' },
+        { '<>': 'p', value: '...' }
       ]
     },
     {
-      type: 'section',
+      '<>': 'section',
       class: 'content',
       id: 'details',
       components: [
-        { type: 'h1', value: 'Introducing SnakeBytes Technology Ltd.' },
+        { '<>': 'h1', value: 'Introducing SnakeBytes Technology Ltd.' },
         {
-          type: 'h3',
+          '<>': 'h3',
           value: 'Your favorite numerical-processing data shop'
         },
         {
-          type: 'ul',
+          '<>': 'ul',
           components: [
             {
-              type: 'li',
+              '<>': 'li',
               components: [
-                { type: 'h4', value: 'Ingest' },
+                { '<>': 'h4', value: 'Ingest' },
                 {
-                  type: 'p',
+                  '<>': 'p',
                   value:
                     'Build diverse data products, you need to be able to collect data points from millions of users and process the results in near real-time.'
                 }
               ]
             },
             {
-              type: 'li',
+              '<>': 'li',
               components: [
-                { type: 'h4', value: 'Process' },
+                { '<>': 'h4', value: 'Process' },
                 {
-                  type: 'p',
+                  '<>': 'p',
                   value: 'Scalable to produce Diverse data products.'
                 }
               ]
             },
             {
-              type: 'li',
+              '<>': 'li',
               components: [
-                { type: 'h4', value: 'Visualize' },
+                { '<>': 'h4', value: 'Visualize' },
                 {
-                  type: 'p',
+                  '<>': 'p',
                   value: 'Explore and understand, without having to wait.'
                 }
               ]
@@ -156,38 +158,38 @@ export default {
       ]
     },
     {
-      type: 'section',
+      '<>': 'section',
       class: 'content',
       id: 'services',
       components: [
-        { type: 'h3', value: 'Services' },
+        { '<>': 'h3', value: 'Services' },
         {
-          type: 'ul',
+          '<>': 'ul',
           components: [
             {
-              type: 'li',
+              '<>': 'li',
               components: [
-                { type: 'h4', value: 'Full Stack Applications' },
+                { '<>': 'h4', value: 'Full Stack Applications' },
                 {
-                  type: 'p',
+                  '<>': 'p',
                   value:
                     'Expert distributed systems, applications that work as websites or mobile apps'
                 }
               ]
             },
             {
-              type: 'li',
+              '<>': 'li',
               components: [
-                { type: 'h4', value: 'Python + JS' },
-                { type: 'p', value: 'Our specialities' }
+                { '<>': 'h4', value: 'Python + JS' },
+                { '<>': 'p', value: 'Our specialities' }
               ]
             },
             {
-              type: 'li',
+              '<>': 'li',
               components: [
-                { type: 'h4', value: 'Education + Training' },
+                { '<>': 'h4', value: 'Education + Training' },
                 {
-                  type: 'p',
+                  '<>': 'p',
                   value: 'Explore and understand, without having to wait.'
                 }
               ]
@@ -195,59 +197,59 @@ export default {
           ]
         },
         {
-          type: 'p',
+          '<>': 'p',
           value:
             'Looking for something else? Our innovation lab is always experimenting with new and emerging technology we do not have experience in. We have run free experiments in the past, so as not to bill for time required to get us up to speed.'
         }
       ]
     },
     {
-      type: 'section',
+      '<>': 'section',
       class: 'content',
       id: 'process',
       components: [
-        { type: 'h3', value: 'Process' },
+        { '<>': 'h3', value: 'Process' },
         {
-          type: 'ul',
+          '<>': 'ul',
           components: [
             {
-              type: 'li',
+              '<>': 'li',
               components: [
-                { type: 'h4', value: 'Discovery & Concept Stage' },
+                { '<>': 'h4', value: 'Discovery & Concept Stage' },
                 {
-                  type: 'p',
+                  '<>': 'p',
                   value:
                     'Learning, Planning, statement of work you can sign electronically'
                 }
               ]
             },
             {
-              type: 'li',
+              '<>': 'li',
               components: [
-                { type: 'h4', value: 'Design & Interactive Prototyping' },
+                { '<>': 'h4', value: 'Design & Interactive Prototyping' },
                 {
-                  type: 'p',
+                  '<>': 'p',
                   value:
                     'establish agile processes, get you working software you can use as fast as possible; We closely engage with our community and believe that open, honest, feedback results in the best entertainment.'
                 }
               ]
             },
             {
-              type: 'li',
+              '<>': 'li',
               components: [
-                { type: 'h4', value: 'Development & Testing' },
+                { '<>': 'h4', value: 'Development & Testing' },
                 {
-                  type: 'p',
+                  '<>': 'p',
                   value: 'Explore and understand, without having to wait.'
                 }
               ]
             },
             {
-              type: 'li',
+              '<>': 'li',
               components: [
-                { type: 'h4', value: 'Delivery & Beyond' },
+                { '<>': 'h4', value: 'Delivery & Beyond' },
                 {
-                  type: 'p',
+                  '<>': 'p',
                   value: 'Explore and understand, without having to wait.'
                 }
               ]
@@ -257,27 +259,27 @@ export default {
       ]
     },
     {
-      type: 'section',
+      '<>': 'section',
       class: 'contact',
       id: 'contact',
       components: [
         {
-          type: 'div',
+          '<>': 'div',
           class: 'about',
           value:
             'SnakeBytes is a small independent software vender and digital product development agency, based in South Dakota, USA. We love application development using network-based architecture for scaleable big-data numerical analysis and visualization.'
         },
         {
-          type: 'div',
+          '<>': 'div',
           class: 'address',
           components: [
             {
-              type: 'p',
+              '<>': 'p',
               value:
                 'If you have any questions, please drop us a line: <a href="mailto:hello@snakebytes.tech">hello@snakebytes.tech</a>'
             },
             {
-              type: 'p',
+              '<>': 'p',
               value:
                 'Have something cool you want to show off? We are always looking to experiment, develop experience, and get up to speed in new ways to better serve our clients.'
             }
@@ -286,22 +288,22 @@ export default {
       ]
     },
     {
-      type: 'footer',
+      '<>': 'footer',
       components: [
-        { type: 'p', value: '© Copyright 2018, SnakeBytes Tech.' },
+        { '<>': 'p', value: '© Copyright 2018, SnakeBytes Tech.' },
         {
-          type: 'p',
+          '<>': 'p',
           value:
             'Except where otherwise noted, content on this site is released under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>'
         },
         {
-          type: 'p',
+          '<>': 'p',
           class: 'appendix',
           value:
             'icons cc-by <a href="https://thenounproject.com/term/-/968729/">datacenter</a>'
         },
         {
-          type: 'iframe',
+          '<>': 'iframe',
           src:
             'https://docs.google.com/forms/d/e/1FAIpQLSdWfmK5ArJQ2kKlTzmDyX_3NVhTfRbtSEYhi9jwVW3nHUR25g/viewform?embedded=true',
           value: 'Loading...'
