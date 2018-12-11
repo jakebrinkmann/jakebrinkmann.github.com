@@ -1,17 +1,48 @@
 {
   "name": "snakebytestech.github.io",
-  "version": "1.0.0",
-  "description": "Charmed Data Pipelines",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "jest"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "gh-pages": "git subtree push --prefix dist origin master"
   },
-  "repository": {
-    "type": "git",
-    "url": "github.com/snakebytestech/snakebytestech.github.io"
+  "dependencies": {
+    "@vue/cli-plugin-babel": "^3.2.0",
+    "@vue/cli-plugin-eslint": "^3.2.0",
+    "@vue/cli-service": "^3.2.0",
+    "vue": "^2.5.20",
+    "vue-template-compiler": "^2.5.17"
   },
-  "author": "SnakeBytes Tech, Ltd.",
-  "license": "CC-BY-4.0",
   "devDependencies": {
-  }
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0-0",
+    "jest": "^23.6.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }

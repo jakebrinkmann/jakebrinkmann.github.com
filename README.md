@@ -1,14 +1,33 @@
 # Jake's OpenSource Webpage
 
-[GitHub Pages](pages.github.com) offers free website hosting.
+[GitHub Pages](https://pages.github.com) offers free website hosting.
 
-## Install
+> Stay tuned...
 
-> Assumes python 2.7 installed
+## Project setup
+```
+npm install
+```
 
-    git clone https://github.com/jakebrinkmann/jakebrinkmann.github.com.git
-    cd jakebrinkmann.github.com
-    python -m SimpleHTTPServer
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
-Website will be running [here](http://localhost:8000/).
+### Compiles and minifies for production
+```
+npm run build
+```
 
+### Run your tests
+```
+npm run test
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

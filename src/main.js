@@ -1,8 +1,8 @@
-// src/main.js
-import App from './components/App.js';
+import Vue from 'vue'
+import App from './App.vue'
 
-// FROM: https://markus.oberlehner.net/blog/goodbye-webpack-building-vue-applications-without-webpack/
+Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),
-}).$mount(`#app`);
+}).$mount('#app')
