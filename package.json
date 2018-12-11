@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "gh-pages": "git subtree push --prefix dist origin master"
+    "gh-pages": "cp CNAME dist; git subtree push --prefix dist origin master"
   },
   "dependencies": {
     "@vue/cli-plugin-babel": "^3.2.0",
