@@ -1,26 +1,26 @@
 // Content of the webpage
-export default {
+const websiteCopy = {
   components: [
     {
       '<>': 'section',
-      class: 'navbar',
+      '$class': 'navbar',
       components: [
         {
           '<>': 'object',
           type: 'image/svg+xml',
           data: 'assets/img/safari-pinned-tab.svg',
           id: 'logo',
-          onload: "styleLogo('logo')"
+          onload: ""
         }
       ]
     },
     {
       '<>': 'section',
-      class: 'hero',
+      '$class': 'hero',
       components: [
         {
           '<>': 'h2',
-          class: 'page-title',
+          '$class': 'page-title',
           value: 'Get performant end-to-end numerical processing pipelines'
         },
         {
@@ -33,14 +33,14 @@ export default {
             },
             {
               '<>': 'div',
-              class: 'datacenter',
+              '$class': 'datacenter',
               components: [
                 {
                   '<>': 'object',
                   type: 'image/svg+xml',
                   data: 'assets/img/datacenter.svg',
                   id: 'hero-icon',
-                  onload: "styleLogo('hero-icon', '#2F2F2F')"
+                  onload: ""
                 }
               ]
             },
@@ -51,7 +51,7 @@ export default {
                   '<>': 'a',
                   href: '#contact',
                   components: [
-                    { '<>': 'h2', class: 'contact', value: 'Contact Me' },
+                    { '<>': 'h2', '$class': 'contact', value: 'Contact Me' },
                     { '<>': 'span', value: "Let's work together!" }
                   ]
                 }
@@ -72,7 +72,7 @@ export default {
             },
             {
               '<>': 'p',
-              class: 'convincing',
+              '$class': 'convincing',
               value:
                 'Pipelines help petabytes of data get processed for companies to provide rich, interactive data visualizations to their customers around the world'
             }
@@ -82,13 +82,20 @@ export default {
     },
     {
       '<>': 'section',
-      class: 'content',
+      '$class': 'content',
       id: 'experience',
       components: [
         {
           '<>': 'h2',
           value:
-            'Launch your data processing to the <span class="emphasis">stratosphere</span>'
+            'Launch your data processing to the ',
+          components: [
+            {
+              '<>': 'span',
+              'class': 'emphasis',
+              'value': 'stratosphere'
+            }
+          ]
         },
         {
           '<>': 'h3',
@@ -111,7 +118,7 @@ export default {
     },
     {
       '<>': 'section',
-      class: 'content',
+      '$class': 'content',
       id: 'details',
       components: [
         { '<>': 'h1', value: 'Introducing SnakeBytes Technology Ltd.' },
@@ -159,7 +166,7 @@ export default {
     },
     {
       '<>': 'section',
-      class: 'content',
+      '$class': 'content',
       id: 'services',
       components: [
         { '<>': 'h3', value: 'Services' },
@@ -205,7 +212,7 @@ export default {
     },
     {
       '<>': 'section',
-      class: 'content',
+      '$class': 'content',
       id: 'process',
       components: [
         { '<>': 'h3', value: 'Process' },
@@ -260,23 +267,30 @@ export default {
     },
     {
       '<>': 'section',
-      class: 'contact',
+      '$class': 'contact',
       id: 'contact',
       components: [
         {
           '<>': 'div',
-          class: 'about',
+          '$class': 'about',
           value:
             'SnakeBytes is a small independent software vender and digital product development agency, based in South Dakota, USA. We love application development using network-based architecture for scaleable big-data numerical analysis and visualization.'
         },
         {
           '<>': 'div',
-          class: 'address',
+          '$class': 'address',
           components: [
             {
               '<>': 'p',
               value:
-                'If you have any questions, please drop us a line: <a href="mailto:hello@snakebytes.tech">hello@snakebytes.tech</a>'
+                'If you have any questions, please drop us a line: ',
+              components:[
+                {
+                  '<>': 'a',
+                  'href': 'mailto:hello@snakebytes.tech',
+                  'value': 'hello@snakebytes.tech'
+                }
+              ]
             },
             {
               '<>': 'p',
@@ -294,13 +308,27 @@ export default {
         {
           '<>': 'p',
           value:
-            'Except where otherwise noted, content on this site is released under <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>'
+            'Except where otherwise noted, content on this site is released under ',
+          components:[
+            {
+              '<>': 'a',
+              'href': 'https://creativecommons.org/licenses/by/4.0/',
+              'value': 'CC-BY-4.0'
+            }
+          ]
         },
         {
           '<>': 'p',
-          class: 'appendix',
+          '$class': 'appendix',
           value:
-            'icons cc-by <a href="https://thenounproject.com/term/-/968729/">datacenter</a>'
+            'icons cc-by ',
+          components:[
+            {
+              '<>': 'a',
+              'href': 'https://thenounproject.com/term/-/968729/',
+              'value': 'datacenter'
+            }
+          ]
         },
         {
           '<>': 'iframe',
@@ -312,3 +340,4 @@ export default {
     }
   ]
 }
+export default websiteCopy
