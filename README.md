@@ -31,3 +31,9 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Acknowledgments:
+
+* Icons CC-BY [datacenter](https://thenounproject.com/term/-/968729/)
+* Icons CC-BY-4.0 [fa-icon](https://fontawesome.com)
+* Theme BSD [Pure](https://purecss.io)
