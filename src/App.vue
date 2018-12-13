@@ -29,7 +29,7 @@ const App = {
   mounted () {
     setTimeout(() => {
       styleLogo('logo')
-      styleLogo('hero-icon', '#2F2F2F')
+      styleLogo('icon-noun-datacenter', '#2F2F2F')
     }, 500)
   }
 }
