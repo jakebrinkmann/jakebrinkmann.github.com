@@ -1,12 +1,20 @@
 <template>
+  <!-- TODO: registering components into our websiteCopy  -->
+  <fa-icon v-if="this['<>'] === 'fa-icon'"
+           :name="this['name']"
+           />
   <!-- Use the built-in component element -->
-  <component :is="this['<>']"
-             :class="this['$class']"
-             :type="this['type']"
-             :href="this['href']"
-             :data="this['data']"
-             :onload="this['onload']"
-             :id="this['id']"
+  <component v-else
+             :is="this['<>']"
+             :class="this['$class'] ? this['$class'] : null"
+             :type="this['type'] ? this['type'] : null"
+             :href="this['href'] ? this['href'] : null"
+             :data="this['data'] ? this['data'] : null"
+             :onload="this['onload'] ? this['onload'] : null"
+             :id="this['id'] ? this['id'] : null"
+             :alt="this['alt'] ? this['alt'] : null"
+             :name="this['name'] ? this['name'] : null"
+             :onclick="this['onclick'] ? this['onclick'] : null"
              >
     {{ value }}
     <elf-caster v-for="(component, index) in components"
@@ -16,6 +24,10 @@
 </template>
 
 <script>
+
+// We register this here, so that it is globally available
+// to reference inside webCopy as `{'<>': 'fa-icon'}`
+import FaIcon from 'vue-awesome'
 
 // Use Props (passed down from parent) to determine how to render ourself
 // ref: https://vuejs.org/v2/guide/components-props.html
@@ -61,6 +73,21 @@ const ElfCaster = {
       type: String,
       default: ''
     },
+    'name': {
+      type: String,
+      default: ''
+    },
+    'alt': {
+      type: String,
+      default: ''
+    },
+    'onclick': {
+      type: String,
+      default: ''
+    },
+  },
+  components: {
+    FaIcon,
   }
 }
 export default ElfCaster
