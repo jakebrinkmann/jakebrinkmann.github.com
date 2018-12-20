@@ -1,7 +1,5 @@
 .DS_Store
 node_modules
-# We use subtree to deploy /dist
-/dist
 
 # local env files
 .env.local
