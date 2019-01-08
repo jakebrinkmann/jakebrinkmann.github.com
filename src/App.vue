@@ -1,41 +1,64 @@
 <template>
   <div id="app">
-    <!-- ElfCaster will recurse down through nested components -->
-    <elf-caster v-for="(component, index) in websiteCopy['components']"
-                :key="index"
-                v-bind="component" />
+    <viewport>
+      <h1>Jake Brinkmann</h1>
+      <sub-heading></sub-heading>
+      <vertical-accordion></vertical-accordion>
+    </viewport>
+    <foot-foot></foot-foot>
   </div>
 </template>
 
 <script>
-// Our helpful template-json-to-html library
-import ElfCaster from './components/ElfCaster'
-// The input JSON of our website copywrite
-import websiteCopy from './websiteCopy'
-// TODO: there must be a better
-import styleLogo from './scripts/styleLogo'
+import Viewport from './components/Viewport'
+import SubHeading from './components/SubHeading'
+import VerticalAccordion from './components/VerticalAccordion'
+import FootFoot from './components/FootFoot'
 
 const App = {
   name: 'app',
   components: {
-    ElfCaster
+    Viewport,
+    SubHeading,
+    VerticalAccordion,
+    FootFoot,
   },
   data () {
     return {
-      websiteCopy
     }
   },
-  // TODO: this is an ugly way to do this...
-  mounted () {
-    setTimeout(() => {
-      styleLogo('logo')
-      styleLogo('icon-noun-datacenter', '#2F2F2F')
-    }, 500)
-  }
 }
 export default App
 </script>
 
 <style>
-@import 'assets/css/style.css';
+/* Global variables for color palette scheme */
+:root {
+  --main-bg-color: #222;
+  --main-txt-color: #aaa;
+  --main-a-color: #9ebcff;
+  --main-a-hover-bg: #3f48cc;
+  --main-highlight-color: #c8ad55;
+  --main-btn-highlight: rgba(200, 173, 85, 0.1);
+  --footer-txt-color: aliceblue;
+
+  --splash-bg-color: #444;
+  --splash-header-color: #ccc;
+  --splash-a-color: #228DFF;
+}
+
+/* Put up a dark curtain */
+html, body {
+  background: var(--main-bg-color);
+}
+
+/* Allow header to not block other elements */
+h1 {
+    display: inline-block;
+}
+
+/* Make selection only highlight as red */
+::selection {
+  color: red;
+}
 </style>
