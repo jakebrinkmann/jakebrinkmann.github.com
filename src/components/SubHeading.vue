@@ -1,6 +1,7 @@
 <template>
   <span class="sub">
-    {{$data.$title}}
+    <span class="title">{{$data.$title}}</span><br>
+    <span class="subtitle">{{$data.$subtitle}}</span>
     <br>
     <a v-for="(contact, index) in $data.$contact"
        :key="index"
@@ -28,6 +29,11 @@ export default SubHeading;
 </script>
 
 <style scoped>
+* {
+  margin: 0 0;
+  padding: 0 0;
+}
+
 span.sub {
   display: inline-block;
   margin-top: 10px;
@@ -37,10 +43,18 @@ span.sub {
 
 .icons svg {
   /* font-size: 36px; */
-  width: 36px;
-  height: 36px;
-  vertical-align: top;
+  width: 18px;
+  height: 18px;
+  vertical-align: bottom;
   color: var(--splash-a-color);
   margin: 0 5px 0 5px;
+}
+
+.subtitle {
+  color: var(--splash-bg-color);
+  font-size: 10px;
+  font-family: Georgia, serif;
+  font-style: oblique;
+  overflow-x: auto;
 }
 </style>

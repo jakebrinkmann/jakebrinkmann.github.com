@@ -1,11 +1,12 @@
 const experience = {
   $title: 'Research and Applied Data Scientist.',
+  $subtitle:
+    'Building custom full-stack distributed numerical processing & visualization platforms.',
   $contact: [
     {
-      link:
-        `mailto:jakebrinkmann@gmail.com?subject=Hi Jake!&amp;body=I found your
-        website and wanted to learn more about you! Do you have some time to talk?
-        Thanks!`,
+      link: `mailto:jakebrinkmann@gmail.com?subject=Hi Jake!&amp;body=I found your
+  website and wanted to learn more about you! Do you have some time to talk?
+  Thanks!`,
       icon: 'envelope'
     },
     { link: '//twitter.com/jakebrinkmann', icon: 'brands/twitter' },

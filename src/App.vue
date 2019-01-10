@@ -55,6 +55,7 @@ html, body {
 /* Allow header to not block other elements */
 h1 {
     display: inline-block;
+    vertical-align:top;
 }
 
 /* Make selection only highlight as red */
