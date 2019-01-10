@@ -1,72 +1,26 @@
 <template>
   <div class="accordion vertical">
     <ul>
-      <li>
+      <li v-for="(project, ix) in projects"
+          :key="ix">
         <input type="radio"
-               id="radio-1"
+               :id="'radio-' + ix"
                name="radio-accordion"
-               checked="checked" />
-        <label for="radio-1">Software</label>
+               :checked="ix === 0 ? 'checked' : ''"/>
+        <label :for="'radio-' + ix">
+          {{project.$title}}
+        </label>
         <div class="content">
           <dl>
-            <dt><a href="balloon-party-cljs">
-                balloon-party-cljs</a></dt>
-            <dd>Build an arcade game in ClojureScript (play-cljs)</dd>
-            <dt><a href="circular-almanac">
-                circular-almanac</a></dt>
-            <dd>Build a glowing seasons clock with CSS keyframes</dd>
-            <dt><a href="my-home-screen">
-                my-home-screen</a></dt>
-            <dd>Create a productive home office</dd>
-            <dt><a href="emergent-planner">
-                emergent-planner</a></dt>
-            <dd>Manage tasks and focus time</dd>
+            <span v-for="(item, iy) in project.$items"
+                  :key="iy">
+            <dt>
+              <a :href="item.link" v-if="item.link">{{item.label}}</a>
+              <span v-else>{{item.label}}</span>
+            </dt>
+            <dd>{{item.text}}</dd>
+            </span>
           </dl>
-        </div>
-      </li>
-      <li>
-        <input type="radio"
-               id="radio-2"
-               name="radio-accordion" />
-        <label for="radio-2">Research</label>
-        <div class="content">
-          <dl>
-            <dt><a href="//dx.doi.org/10.3390/rs8020158">
-                Thermal Emissive Imaging Stability over Antarctica</a></dt>
-            <dd>Use a weather research station (Dome-C) to inter-compare
-              sensors (Aqua MODIS, NPP VIIRS)</dd>
-            <dt><a href="//hyspiri.jpl.nasa.gov/downloads/2015_Symposium/day2/13_Multi-tempCross-calTerraMODIS_Landsat7ETM_ReflecBand_Angal.pdf">
-                Reflective Stability over deserts</a></dt>
-            <dd>A hyperspectral surface profile (EO1 Hyperion) used to
-              inter-compare sensors (Terra MODIS, Landsat7 ETM+)</dd>
-          </dl>
-        </div>
-      </li>
-      <li>
-        <input type="radio"
-               id="radio-3"
-               name="radio-accordion" />
-        <label for="radio-3">News</label>
-        <div class="content">
-          <ul>
-            <li>March 13th, 2014 - <a href="http://landsat.gsfc.nasa.gov/?p=8017">
-                Landsat Cal/Val Team Receives 2013 Robert H. Goddard Award for
-                Science</a></li>
-            <li>March 3rd, 2014 - <a href="https://www.sdstate.edu/sites/default/files/2017-04/Impulse-Spring-2014.pdf#page=22">
-                SDSU grad students among NASA award winners</a></li>
-            <li>May 21st, 2012 - <a href="http://www.gojacks.com/news/2012/5/21/205429096.aspx">
-                Jacks send five to NCAA Championships</a></li>
-            <li>May 12th, 2012 - <a href="http://www.gojacks.com/news/2012/5/12/205426584.aspx">
-                Brinkmann tops in discus</a></li>
-            <li>May 5th, 2012 - <a href="http://www.gojacks.com/news/2012/5/5/205423823.aspx">
-                Area athletes shine at first USF Relays</a></li>
-            <li>May 4th, 2012 - <a href="http://www.gojacks.com/news/2012/5/4/205423487.aspx">
-                SDSU honors senior student-athletes</a></li>
-            <li>March 1st, 2010 - <a href="http://www.thesummitleague.org/sports/track/2009-10/releases/204898350_1">
-                North Dakota State Leads After Day One</a></li>
-            <li>August 14th, 2007 - <a href="http://www.gojacks.com/news/2007/8/14/1151253.aspx">
-                SDSU Track and Field adds three</a></li>
-          </ul>
         </div>
       </li>
     </ul>
@@ -74,7 +28,13 @@
 </template>
 
 <script>
-const VerticalAccordion = {};
+import experience from '@/assets/data/experience'
+
+const VerticalAccordion = {
+  name: "VerticalAccordion",
+  data () { return {projects: experience.$projects} }
+};
+
 export default VerticalAccordion;
 </script>
 
@@ -150,4 +110,10 @@ export default VerticalAccordion;
   height: auto;
   border: 1px solid #616161;
 }
+
+/* Internal Accordian Description Lists */
+dt {
+  padding-top: 3px;
+}
+
 </style>
