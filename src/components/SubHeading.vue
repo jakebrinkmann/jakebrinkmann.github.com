@@ -1,14 +1,12 @@
 <template>
   <span class="sub">
-    Research and Applied Data Scientist.<br>
-    <a href="//twitter.com/jakebrinkmann/">
-      <fa-icon name="brands/twitter" id="twitter-badge"></fa-icon>
-    </a>
-    <a href="//github.com/jakebrinkmann/">
-      <fa-icon name="brands/github" id="github-badge"></fa-icon>
-    </a>
-    <a href="//scholar.google.com/citations?user=hZNcv7UAAAAJ&hl=en">
-      <fa-icon name="graduation-cap" id="scholar-badge"></fa-icon>
+    {{$data.$title}}
+    <br>
+    <a v-for="(contact, index) in $data.$contact"
+       :key="index"
+       :href="contact.link"
+       class="icons">
+      <fa-icon :name="contact.icon"></fa-icon>
     </a>
   </span>
 </template>
@@ -16,12 +14,15 @@
 <script>
 // TODO: only import the icons used to reduce bundle size
 import * as FaIcon from "vue-awesome";
+// Load all contact and title information
+import experience from "@/assets/data/experience"
 
 const SubHeading = {
   name: "SubHeading",
   components: {
     FaIcon
-  }
+  },
+  data () { return experience}
 };
 export default SubHeading;
 </script>
@@ -34,7 +35,7 @@ span.sub {
   padding: 8px 25px;
 }
 
-#twitter-badge, #github-badge, #scholar-badge {
+.icons svg {
   /* font-size: 36px; */
   width: 36px;
   height: 36px;
