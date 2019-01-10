@@ -18,80 +18,85 @@ const experience = {
   ],
   $projects: [
     {
-      $title: 'Distributed Cloud Computing',
+      $title: 'Cloud Computing',
+      $subtitle: 'Building high-performance data processing pipelines at scale.',
       $items: [
         {
           label: 'Docker Recipes',
           link: 'docker-recipes',
           text:
-            'My experimental sandbox for templating tech-stacks built around docker.'
+            'Experimental sandbox for templating tech-stacks built around docker.'
         },
         {
-          label: 'JSON Rest APIs (USGS/EROS)',
-          link: '//github.com/USGS-EROS/espa-api',
+          label: 'ESPA (USGS/EROS)',
+          link: 'https://espa.cr.usgs.gov',
           text:
-            'Worked on building up and maintaining a large-scale image processing system.'
-        }
-      ]
-    },
-    {
-      $title: 'Website Design',
-      $items: [
-        {
-          label: 'Circular Almanac',
-          link: 'circular-almanac',
-          text:
-            'A glowing seasons clock with CSS keyframes to show the cycles of nature.'
-        },
-        {
-          label: 'Home Screen',
-          link: 'my-home-screen',
-          text: 'A screen full of tools to help productively get things done.'
-        },
-        {
-          label: 'Emergent Planner',
-          link: 'emergent-planner',
-          text:
-            'A todo and time management application for hyper-focus on getting things done.'
+            'Worked towards making a UI+API Map/Reduce distributed system Cloud-Native.'
         }
       ]
     },
     {
       $title: 'Data Visualization',
+      $subtitle: 'A passion to get scientists easy access their data.',
       $items: [
         {
-          label: 'NASA Workshop: Interactive Data Viz',
+          label: 'Workshop on Interactive Data Viz (NASA GSFC)',
           link: 'http://jakebrinkmann.com/2015-PUG-flask-data-vis/#/',
-          text: 'Gave a tutorial to NASA GSFC Python Users Group on how to build interactive applications using the Flask Python Web Framework. '
+          text: 'Tutorial to build interactive applications using the Flask Python Web Framework. '
         }
       ]
     },
     {
       $title: 'Numerical Analytics',
+      $subtitle: 'Strengths in finding the information hidden in data.',
       $items: [
         {
-          label: 'Thermal Emissive Imaging',
+          label: 'Remote Sensing - Thermal Emissive Imaging Research',
           link: '//dx.doi.org/10.3390/rs8020158',
           text:
-            'Use a weather research station (Dome-C) to inter-compare sensors (Aqua MODIS, NPP VIIRS)'
+            'Aggregated data from weather research station (Dome-C) to inter-compare sensors (Aqua MODIS, NPP VIIRS) performance'
         },
         {
-          label: 'Reflective Stability',
+          label: 'NASA JPL - Reflective Stability Research',
           link:
             '//hyspiri.jpl.nasa.gov/downloads/2015_Symposium/day2/13_Multi-tempCross-calTerraMODIS_Landsat7ETM_ReflecBand_Angal.pdf',
           text:
-            'A hyperspectral surface profile (EO1 Hyperion) used to inter-compare sensors (Terra MODIS, Landsat7 ETM+)'
+            'A hyperspectral surface profile (EO1 Hyperion) used to inter-compare sensor (Terra MODIS, Landsat7 ETM+) performance'
         },
         {
           label: '2013 NASA Robert H. Goddard Award',
           link: 'http://landsat.gsfc.nasa.gov/?p=8017',
           text:
-            'Recognition for my data mining contributions to the Landsat Cal/Val team.'
+            'Recognition for contributions to the Landsat Cal/Val team in statistical data analytics.'
         }
       ]
     },
     {
-      $title: 'Indie Games',
+      $title: 'Website Design',
+      $subtitle: 'Keeping up with the rapidly evolving Web Development field.',
+      $items: [
+        {
+          label: 'Emergent Planner',
+          link: 'emergent-planner',
+          text:
+            'A todo and time management application for hyper-focus on getting things done.'
+        },
+        {
+          label: 'Circular Almanac',
+          link: 'circular-almanac',
+          text:
+            'A glowing color-coded seasons clock with CSS keyframes to show the cycles of nature.'
+        },
+        {
+          label: 'Home Screen',
+          link: 'my-home-screen',
+          text: 'A basic HTML/CSS page full of tools to help productively get things done.'
+        }
+      ]
+    },
+    {
+      $title: 'Video Games',
+      $subtitle: 'Getting kids interested in programming.',
       $items: [
         {
           label: 'Balloon Party',
@@ -102,76 +107,38 @@ const experience = {
       ]
     },
     {
-      $title: 'About',
+      $title: 'More Skills',
+      $subtitle: 'Short story of things I am rather proud of in my life.',
       $items: [
-        {
-          label: 'Independent contractor',
-          link: '//jakebrinkmann.com',
-          text:
-            'Work-for-Hire on custom software projects for AI/ML workloads. '
-        },
-        {
-          label: 'Data Visualization for DoD Unmanned Aerial Vehicels',
-          link: 'https://ravenaerostar.com/',
-          text:
-            'Rapidly built entire platforms for processing and visualization of target locations for DoD customers.'
-        },
-        {
-          label: 'Distributed Computing at the USGS/EROS Data Center',
-          link: 'https://espa.cr.usgs.gov/',
-          text:
-            'Worked to become the Technical lead for ESPA, a Web UI/API and Map/Reduce system on commodity server clusters allowing scientists to process petabyte-scale data stores.'
-        },
         {
           label: 'Successful Recovery of Flagship NASA Instrument',
           link:
             'https://mcst.gsfc.nasa.gov/news/mcst-summary-terra-modis-safe-mode-recovery',
           text:
-            'As a NASA Scientist & Imaging Engineer, responsible for planning the recovery of the then-16yo MODIS sensor on the international TERRA observatory.'
+            'Responsible for planning the recovery of the then 16yo sensor on an international stage.'
         },
         {
           label: 'SDSU Grad Student & NASA award winner',
           link:
             'https://www.sdstate.edu/sites/default/files/2017-04/Impulse-Spring-2014.pdf#page=22',
           text:
-            'Studied Image Processing in Graduate School, focused on Earth Observation Satellites. First SDSU grad-student named among NASA award winners.'
+            'First SDSU grad-student named among NASA award winners (Image Processing).'
         },
         {
-          label: 'NCAA D1 Outdoor Championships - Prelim Qualifier',
+          label: 'NCAA Division 1 Outdoor Championships - Prelim Qualifier',
           link: 'http://www.gojacks.com/news/2012/5/21/205429096.aspx',
           text:
             'Qualified in hammer and discus events to compete in Austin, Texas.'
         },
         {
-          label: 'Conference Champion - Discus Throw',
-          link: 'http://www.gojacks.com/news/2012/5/12/205426584.aspx',
-          text: ''
-        },
-        {
-          label: 'School Record - 16lb Hammer Throw',
-          link: 'http://www.gojacks.com/news/2012/5/5/205423823.aspx',
-          text: ''
-        },
-        {
-          label: 'Impact Award for Engineering Student-Athletes',
+          label: 'SDSU Impact Award for Student-Athletes',
           link: 'http://www.gojacks.com/news/2012/5/4/205423487.aspx',
-          text: ''
-        },
-        {
-          label: 'School Record - 35lb Weight Throw',
-          link:
-            'http://www.thesummitleague.org/sports/track/2009-10/releases/204898350_1',
-          text: ''
-        },
-        {
-          label: 'Student Athlete - SDSU Track and Field team',
-          link: 'http://www.gojacks.com/news/2007/8/14/1151253.aspx',
-          text: 'Majored in Electrical Engineering while travelling to track meets.'
+          text: 'Setting school records while majoring in Electrical Engineering.'
         },
         {
           label: 'MN High School State Track & Field Meet',
           link: 'https://www.twincities.com/2007/06/09/2007-minnesota-high-school-track-and-field-meet-2/',
-          text: 'Only athlete from my small-town high school to compete in a state championship. My dad coached me to a Silver medal in discus.'
+          text: 'My father coached me to a silver medal in discus.'
         }
       ]
     }

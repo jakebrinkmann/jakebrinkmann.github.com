@@ -45,6 +45,7 @@ export default App
   --splash-bg-color: #444;
   --splash-header-color: #ccc;
   --splash-a-color: #228DFF;
+  --splash-subtitle-color: #26547C;
 }
 
 /* Put up a dark curtain */

@@ -11,6 +11,7 @@
           {{project.$title}}
         </label>
         <div class="content">
+          <p class="content-subtitle">{{project.$subtitle}}</p>
           <dl>
             <span v-for="(item, iy) in project.$items"
                   :key="iy">
@@ -114,6 +115,11 @@ export default VerticalAccordion;
 /* Internal Accordian Description Lists */
 dt {
   padding-top: 3px;
+}
+
+.content-subtitle {
+  color: var(--splash-subtitle-color);
+  font-weight: bolder;
 }
 
 </style>
