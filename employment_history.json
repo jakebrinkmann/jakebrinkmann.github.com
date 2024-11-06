@@ -10,6 +10,24 @@
     "Jake is a hard working full-stack software engineer and solutions design expert, with almost 15 years of experience utilizing modern cloud-native technologies for building complex, evolving systems running on resource-constrained hardware.",
     "With proven success in leading and scaling highly productive teams, while rapidly building powerful, near-real-time, and distributed web platforms, Jake excels at ensuring customer and user satisfaction on time and under budget."
   ],
+  "education": [
+    {
+      "degree": "B.S. Electrical Engineering",
+      "institution": "South Dakota State University (SDSU)",
+      "url": "sdstate.edu",
+      "location": "Brookings, SD, USA",
+      "GPA": 3.1,
+      "level": "Undergraduate"
+    },
+    {
+      "degree": "M.S. Electrical Engineering",
+      "institution": "South Dakota State University (SDSU)",
+      "url": "sdstate.edu",
+      "location": "Brookings, SD, USA",
+      "GPA": 3.5,
+      "level": "Graduate"
+    }
+  ],
   "experience": [
     {
       "title": "Senior Software Engineer",
