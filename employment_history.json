@@ -1,0 +1,143 @@
+{
+  "name": "Jake Brinkmann",
+  "tagline": "Full Stack Cloud Computing",
+  "contact": {
+    "phone": "+1 (612) 426 - 1440",
+    "email": "jakebrinkmann@gmail.com",
+    "website": "jakebrinkmann.com"
+  },
+  "profile": [
+    "Jake is a hard working full-stack software engineer and solutions design expert, with almost 15 years of experience utilizing modern cloud-native technologies for building complex, evolving systems running on resource-constrained hardware.",
+    "With proven success in leading and scaling highly productive teams, while rapidly building powerful, near-real-time, and distributed web platforms, Jake excels at ensuring customer and user satisfaction on time and under budget."
+  ],
+  "experience": [
+    {
+      "title": "Senior Software Engineer",
+      "tagline": "Healthcare Applications, Team Lead",
+      "company": "SONIFI Health",
+      "url": "www.sonifihealth.com",
+      "location": "Sioux Falls, SD, USA",
+      "employment": "full-time",
+      "duration": {
+        "start_date": "2022-06-01",
+        "end_date": "2024-11-01"
+      },
+      "responsibilities": [
+        "Definition, development, and deployment of event-driven architectures driving interactive healthcare products, running on in-room SmartTVs, integrated with IOT devices connected to an AWS cloud platform built using Python, Typescript, and Serverless (StepFunctions, DynamoDB)."
+      ]
+    },
+    {
+      "title": "Software Systems Engineer II",
+      "tagline": "Cloud Configuration Team",
+      "company": "SONIFI Solutions, Inc.",
+      "url": "sonifi.com",
+      "location": "Sioux Falls, SD, USA",
+      "employment": "full-time",
+      "duration": {
+        "start_date": "2019-12-01",
+        "end_date": "2022-05-01"
+      },
+      "responsibilities": [
+        "Built the flagship Cloud Configuration product on an AWS platform, using React and Python, allowing hotel staff to manage guest-aware in-room television devices, integrated with on-site PMS."
+      ]
+    },
+    {
+      "title": "Application Developer",
+      "tagline": "Weather & Navigation Team",
+      "company": "Raven Aerostar Technical Solutions, Inc.",
+      "url": "www.ravenaerostar.com",
+      "location": "Sioux Falls, SD, USA",
+      "employment": "full-time",
+      "duration": {
+        "start_date": "2018-06-01",
+        "end_date": "2018-10-01"
+      },
+      "responsibilities": [
+        "Design, develop, and maintain software server and web browser applications for unmanned stratospheric aerospace technology",
+        "• Created SPAs in VueJS, minimalist designs focused on intuitive UI/UX, allowed showcasing interactive data-viz directly to customers as well as experimental exploration by advanced users",
+        "• Pioneered event-driven distributed processing platform, automated refresh on new input availability; demoed scalable design in production; improved update frequency from 3hrs to 5min",
+        "• Containerized all core C++/Python science algorithms, facilitated new algorithm dev through creating a simple replicable dev/test/prod environment, reducing month-long onboarding to 15min",
+        "• Translated business objectives into full-stack 2-4 month project proposals; championed agile process for CI/CD of prototypes, often achieving same-day turnaround following reviews",
+        "• Expert time management to achieve personal project priorities, mentorship of 3 interns, and tech leadership of team of 3 scientists; commended for thorough code reviews and helpful feedback",
+        "- Python (Falcon, asyncio, Celery, Jupyter), Docker, ES8 JavaScript (Vue, Vuex, leaflet, d3, axios, webpack), PostgreSQL, RabbitMQ, NGINX, Jenkins, Gerrit"
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "tagline": "Science Research and Development Team",
+      "company": "Stinger Ghaffarian Technologies (SGT)",
+      "url": "www.sgt-inc.com",
+      "location": "Sioux Falls, SD, USA",
+      "employment": "full-time",
+      "duration": {
+        "start_date": "2016-12-01",
+        "end_date": "2018-05-01"
+      },
+      "responsibilities": [
+        "Supported the Technical Services Support Contract (TSSC) for the USGS Earth Resources Observation and Science (EROS) data center.",
+        "• Prototyped systems and software to process, generate, and analyze high-level scientific data products from Landsat 5-8 inputs, eliminating many of the image preprocessing steps",
+        "• Full-stack engineering design of RESTful APIs, connected to databases and internal services, which were consumed by light HTML/JS Web UIs",
+        "• Containerization of platform services, implementing automatic Continuous Integration testing in the cloud (Saves time, ensures higher QA)",
+        "• Upgrade and optimization of a 450-Core/3-TB multi-node cluster to utilize Hadoop-2 for dynamic resource scheduling and more efficient parallel image processing (Up to 5x speedup)",
+        "• Improving site reliability for service downtimes, fixing high-risk security vulnerabilities, advancing real-time system monitoring",
+        "• Providing innovative insights to stakeholders on 500+ daily active science users through distributed log parsing, data mining, and web plotting",
+        "-Software: Python, Docker, PostgreSQL, NGINX, git, Hadoop2/YARN, Memcached, HTML/CSS/JS, GDAL, Travis-CI"
+      ]
+    },
+    {
+      "title": "Research Scientist, Electrical Engineer",
+      "tagline": "MODIS Characterization Support Team",
+      "company": "Science Systems and Applications, Inc (SSAI)",
+      "url": "www.ssaihq.com",
+      "location": "Lanham, MD, USA",
+      "employment": "full-time",
+      "duration": {
+        "start_date": "2014-05-01",
+        "end_date": "2016-04-01"
+      },
+      "responsibilities": [
+        "Supported the Hydrospheric & Biospheric Sciences Support Services (HBSSS) Contract for the NASA Goddard Space Flight Center.",
+        "• Implemented and tested algorithm enhancements for operational calibrated product delivery ",
+        "• Developed report generation software utility allowing for PDF assimilation (Reduced time spent by >95%)",
+        "• Independently created data visualization web-application used for telemetry anomaly investigation",
+        "• Following on-orbit fault-hold, designed the successful recovery command sequence for a NASA instrument ",
+        "-Software: Python, git, IDL, TCSH, GDAL, PostgreSQL, JavaScript, HTML, CSS, MODTRAN, 6S, Apache"
+      ]
+    },
+    {
+      "title": "Graduate Research Assistant",
+      "tagline": "Image Processing Lab",
+      "company": "South Dakota State University",
+      "url": "sdstate.edu",
+      "location": "Brookings, SD, USA",
+      "employment": "part-time",
+      "duration": {
+        "start_date": "2011-05-01",
+        "end_date": "2014-04-01"
+      },
+      "responsibilities": [
+        "• Created pre-launch Landsat-8 (LDCM) algorithm prototype software using simulated datasets",
+        "• Developed new algorithms for on-orbit requirements testing of detector uniformity and spatial quality",
+        "• Used spatial data aggregation to demonstrate auto-correlated thermal stray light image artifacts",
+        "-Software: Python, MATLAB, SQLite, GDAL, SVN"
+      ]
+    },
+    {
+      "title": "Firmware Test Engineer Intern",
+      "tagline": "Design Engineering Group",
+      "company": "Sencore",
+      "url": "www.sencore.com",
+      "location": "Sioux Falls, SD, USA",
+      "employment": "intern",
+      "duration": {
+        "start_date": "2010-05-01",
+        "end_date": "2010-09-01"
+      },
+      "responsibilities": [
+        "• Implemented tests of video signal encoding/decoding for product quality following new firmware releases",
+        "• Saved thousands of hours by automating both video inputs cycling and resultant output waveform analysis",
+        "-Software: LabVIEW, SVN, C++"
+      ]
+    }
+  ]
+}
