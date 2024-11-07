@@ -36,8 +36,16 @@ jobs:
       - name: Build project
         run: "npm run build"
 
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: website-build
+          path: ./dist
+
       - name: Deploy to GitHub Pages
         id: deployment
+        if: github.ref == 'refs/heads/main'
         uses: actions/deploy-pages@v2
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
