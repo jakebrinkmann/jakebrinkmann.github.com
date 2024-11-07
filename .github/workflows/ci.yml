@@ -54,7 +54,9 @@ jobs:
       - name: debug
         run: |
           find . -not -type l
+          echo '...'
           find . -type l
+          echo '...'
           du -sh .
       - name: Deploy to GitHub Pages
         id: deployment
