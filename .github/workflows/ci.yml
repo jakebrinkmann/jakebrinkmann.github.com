@@ -52,7 +52,10 @@ jobs:
         with:
           name: github-pages
       - name: debug
-        run: find .
+        run: |
+          find . -not -type l
+          find . -type l
+          du -sh .
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
