@@ -4,6 +4,10 @@
 
 > Stay tuned...
 
+## Dependencies
+
+Depends on infrastructure deployed here: [`jakebrinkmann/aws-cloud-core`](https://github.com/jakebrinkmann/aws-cloud-core)
+
 ## Project setup
 ```
 npm install
@@ -37,3 +41,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 * Icons CC-BY [datacenter](https://thenounproject.com/term/-/968729/)
 * Icons CC-BY-4.0 [fa-icon](https://fontawesome.com)
 * Theme BSD [Pure](https://purecss.io)
+
+## TODO
+
+- [ ] use Vue 3 and `vite` (instead of `vue-cli-service`)
