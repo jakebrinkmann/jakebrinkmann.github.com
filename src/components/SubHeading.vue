@@ -1,12 +1,13 @@
 <template>
   <span class="sub">
-    <span class="title">{{$data.$title}}</span><br>
-    <span class="subtitle">{{$data.$subtitle}}</span>
-    <br>
-    <a v-for="(contact, index) in $data.$contact"
-       :key="index"
-       :href="contact.link"
-       class="icons">
+    <span class="tagline">{{ tagline }}</span>
+    <br />
+    <a
+      v-for="(contact, index) in contacts"
+      :key="index"
+      :href="contact.link"
+      class="icons"
+    >
       <fa-icon :name="contact.icon"></fa-icon>
     </a>
   </span>
@@ -15,15 +16,16 @@
 <script>
 // TODO: only import the icons used to reduce bundle size
 import * as FaIcon from "vue-awesome";
-// Load all contact and title information
-import experience from "@/assets/data/experience"
 
 const SubHeading = {
   name: "SubHeading",
-  components: {
-    FaIcon
+  props: {
+    contacts: Array,
+    tagline: String,
   },
-  data () { return experience}
+  components: {
+    FaIcon,
+  },
 };
 export default SubHeading;
 </script>
@@ -36,9 +38,9 @@ export default SubHeading;
 
 span.sub {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 0px;
   line-height: 1.5;
-  padding: 8px 25px;
+  padding: 8px 8px;
 }
 
 .icons svg {
@@ -50,11 +52,17 @@ span.sub {
   margin: 0 5px 0 5px;
 }
 
-.subtitle {
-  color: var(--splash-bg-color);
-  font-size: 10px;
-  font-family: Georgia, serif;
-  font-style: oblique;
-  overflow-x: auto;
+@media print {
+  span.sub {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    display: inline-block;
+  }
+  span.sub .icons {
+    line-height: 0;
+    padding: 10px;
+  }
 }
 </style>
