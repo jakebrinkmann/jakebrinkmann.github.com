@@ -1,34 +1,45 @@
 <template>
   <div id="app">
     <viewport>
-      <h1>Jake Brinkmann</h1>
-      <sub-heading></sub-heading>
-      <vertical-accordion></vertical-accordion>
+      <Heading
+        :full_name="full_name"
+        :tagline="tagline"
+        :job_searching="job_searching"
+        :contacts="contacts"
+      ></Heading>
+      <Profile :profile="profile"></Profile>
+      <Education :education="education"></Education>
+      <Experience :experience="experience"></Experience>
     </viewport>
     <foot-foot></foot-foot>
   </div>
 </template>
 
 <script>
-import Viewport from './components/Viewport'
-import SubHeading from './components/SubHeading'
-import VerticalAccordion from './components/VerticalAccordion'
-import FootFoot from './components/FootFoot'
+import Viewport from "./components/Viewport";
+import Heading from "./components/Heading";
+import FootFoot from "./components/FootFoot";
+import Profile from "./components/Profile";
+import Education from "./components/Education";
+import Experience from "./components/Experience";
+
+import employment_history from "@/assets/data/employment_history.js";
 
 const App = {
-  name: 'app',
+  name: "app",
   components: {
     Viewport,
-    SubHeading,
-    VerticalAccordion,
+    Heading,
+    Profile,
+    Education,
+    Experience,
     FootFoot,
   },
-  data () {
-    return {
-    }
+  data() {
+    return employment_history;
   },
-}
-export default App
+};
+export default App;
 </script>
 
 <style>
@@ -44,23 +55,32 @@ export default App
 
   --splash-bg-color: #444;
   --splash-header-color: #ccc;
-  --splash-a-color: #228DFF;
-  --splash-subtitle-color: #26547C;
+  --splash-a-color: #228dff;
+  --splash-subtitle-color: #26547c;
 }
 
 /* Put up a dark curtain */
-html, body {
-  background: var(--main-bg-color);
-}
-
-/* Allow header to not block other elements */
-h1 {
-    display: inline-block;
-    vertical-align:top;
+@media screen {
+  html,
+  body {
+    background: var(--main-bg-color);
+  }
 }
 
 /* Make selection only highlight as red */
 ::selection {
   color: red;
+}
+
+/* Defines Letter size: 8.5 x 11 inches */
+@page {
+  size: 8.5in 11in;
+}
+
+h2 {
+  margin: 0px;
+  padding: 0px 10px;
+  background: #228dff;
+  color: #fff;
 }
 </style>
