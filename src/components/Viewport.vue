@@ -18,11 +18,11 @@ div.bin {
   border-radius: 10px;
   padding: 5px;
 
-  min-width: 800px;
-  max-width: 8.5in; /* Ensures the content fits the letter size */
+  width: 8.3in;
+  height: 10.8in;
 
-  height: auto;
-  max-height: 11in; /* Matches the height of Letter size */
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 @media screen {
   div.bin {
@@ -32,7 +32,8 @@ div.bin {
 
 @media print {
   div.bin {
-    margin: 0px auto;
+    margin: 0px 0px;
+    border: 0px 0px;
   }
 }
 </style>

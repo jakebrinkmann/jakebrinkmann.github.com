@@ -9,6 +9,7 @@
       ></Heading>
       <Profile :profile="profile"></Profile>
       <Education :education="education"></Education>
+      <Experience :experience="experience"></Experience>
     </viewport>
     <foot-foot></foot-foot>
   </div>
@@ -17,10 +18,10 @@
 <script>
 import Viewport from "./components/Viewport";
 import Heading from "./components/Heading";
-import VerticalAccordion from "./components/VerticalAccordion";
 import FootFoot from "./components/FootFoot";
 import Profile from "./components/Profile";
 import Education from "./components/Education";
+import Experience from "./components/Experience";
 
 import employment_history from "@/assets/data/employment_history.js";
 
@@ -31,6 +32,7 @@ const App = {
     Heading,
     Profile,
     Education,
+    Experience,
     FootFoot,
   },
   data() {

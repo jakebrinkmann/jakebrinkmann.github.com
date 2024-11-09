@@ -2,12 +2,12 @@
   <div class="banner">
     <div class="banner_left">
       <img :src="pictureSrc" alt="Profile Picture" class="profile_pic" />
-      <!-- <span v-if="job_searching" class="badge">Open to Work</span> -->
     </div>
     <div class="banner_right">
       <h1 class="heading">{{ full_name }}</h1>
       <SubHeading :contacts="contacts" :tagline="tagline"></SubHeading>
     </div>
+    <span v-if="job_searching" class="badge">Job Hunting!</span>
   </div>
 </template>
 
@@ -43,10 +43,6 @@ export default {
   .banner_left {
     display: none;
   }
-
-  .heading {
-    margin-bottom: 10px;
-  }
 }
 .profile_pic {
   margin-top: 10px;
@@ -69,25 +65,30 @@ export default {
   width: 100px;
 }
 .badge {
-  font-size: 0.65rem;
+  font-size: 1.65rem;
   width: fit-content;
+  height: fit-content;
   display: block;
   color: var(--splash-a-color);
-  background-color: var(--splash-bg-color);
   border-radius: 12px;
-  padding: 2px;
   text-transform: uppercase;
   text-align: center;
-  box-shadow: 0 0 8px rgba(40, 167, 69, 0.5); /* Green glow effect */
+  /* Blue glow effect */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
   transition: box-shadow 0.3s ease-in-out;
-  padding: 5px;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 5px 15px;
+  margin: 10px auto 0;
 }
 
-/* Hover effect for a stronger glow */
 .badge:hover {
-  box-shadow: 0 0 15px rgba(40, 167, 69, 0.7); /* Stronger green glow */
+  /* Stronger blue glow */
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
+  background-color: var(--splash-bg-color);
+}
+
+@media print {
+  .badge {
+    display: none;
+  }
 }
 </style>

@@ -54,15 +54,16 @@ span.sub {
 
 @media print {
   span.sub {
-    position: fixed;
+    position: absolute;
     top: 0;
-    right: 0;
-
-    display: inline-block;
+    left: 6in;
+    width: 250px;
+    line-height: 1.3;
   }
-  span.sub .icons {
-    line-height: 0;
-    padding: 10px;
+  span.sub .icons svg {
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
   }
 }
 </style>
