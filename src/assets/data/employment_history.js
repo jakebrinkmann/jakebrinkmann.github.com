@@ -46,9 +46,12 @@ export default {
         end: "2024-11-01",
       },
       responsibilities: [
-        "Definition, development, and deployment of event-driven architectures for interactive healthcare products, running on in-room SmartTVs, integrated with IOT devices connected to an AWS cloud platform built using Python, Typescript, and Serverless (StepFunctions, DynamoDB).",
+        "Led a cross-functional team of 20+ engineers, serving as an information radiator and trusted decision-maker.",
+        "Designed a serverless HL7/FHIR ingestion pipeline, ensuring HIPAA-compliant patient awareness from real-time ADT/ORM data.",
+        "Designed a REST API for telehealth integration with a POC React app for secure OAuth2 credentialing, accelerating go-to-market and unlocking significant business growth.",
       ],
-      software: "AWS-CDK, Python, Docker, Celery, Typescript",
+      software:
+        "AWS-CDK, Python, PostgreSQL, ReactJS, DynamoDB, OpenAPI, Docker, Django, Celery, Typescript, SAML",
     },
     {
       title: "Software Systems Engineer II",
@@ -62,9 +65,12 @@ export default {
         end: "2022-06-01",
       },
       responsibilities: [
-        "Built the flagship Cloud Configuration product on an AWS platform, using React and Python, allowing hotel staff to manage guest-aware in-room television devices, integrated with on-site PMS.",
+        "Built the flagship Cloud Configuration product, using React and Python, allowing hotel staff to manage in-room television devices.",
+        "Developed a lightweight, configuration-driven integration engine linking on-site and cloud PMS, enabling real-time guest awareness and seamless in-room purchase billing.",
+        "Enhanced quality assurance by creating automated and manual simulation tools to validate functionality and prevent regressions during pre-release smoke testing.",
       ],
-      software: "Python, React, Docker, Gitlab-CI",
+      software:
+        "Python, AWS-Lambda, ReactJS, AWS-Cognito, OAuth2-JWT, Docker, Gitlab-CI, Postman",
     },
     {
       title: "Application Developer",
@@ -124,9 +130,9 @@ export default {
       },
       responsibilities: [
         // "Supported the Hydrospheric & Biospheric Sciences Support Services (HBSSS) Contract for the NASA Goddard Space Flight Center.",
+        "Independently created data visualization web-application used for telemetry anomaly investigation",
         "Implemented and tested algorithm enhancements for operational calibrated product delivery ",
         "Developed report generation software utility allowing for PDF assimilation (Reduced time spent by >95%)",
-        "Independently created data visualization web-application used for telemetry anomaly investigation",
         "Following on-orbit fault-hold, designed the successful recovery command sequence for a NASA instrument ",
       ],
       software: "Python, Git, IDL, GDAL, PostgreSQL, HTML/CSS/JS, Apache",
@@ -143,9 +149,9 @@ export default {
         end: "2014-04-01",
       },
       responsibilities: [
+        "Used spatial data aggregation to demonstrate auto-correlated thermal stray light image artifacts",
         "Created pre-launch Landsat-8 (LDCM) algorithm prototype software using simulated datasets",
         "Developed new algorithms for on-orbit requirements testing of detector uniformity and spatial quality",
-        "Used spatial data aggregation to demonstrate auto-correlated thermal stray light image artifacts",
       ],
       software: "Python, MATLAB, SQLite, GDAL, SVN",
     },

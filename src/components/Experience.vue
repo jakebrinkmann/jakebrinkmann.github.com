@@ -21,7 +21,11 @@
     </div>
     <h2>Technical Skills</h2>
     <div class="skills">
-      <div class="skill-item" v-for="skill in uniqueSkills" :key="skill">
+      <div
+        class="skill-item"
+        v-for="skill in uniqueSkills.slice(0, 28)"
+        :key="skill"
+      >
         {{ skill }}
       </div>
     </div>
@@ -90,7 +94,7 @@ export default {
   color: #0077c0; /* Adjust color to match the section header */
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .job {
@@ -100,7 +104,7 @@ export default {
 }
 
 .job > *:first-child {
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 .job-position {
@@ -131,7 +135,7 @@ export default {
 }
 
 .job-description li {
-  margin-bottom: 5px;
+  margin-bottom: 1px;
 }
 
 /* TODO: Skills could maybe be it's own component */
