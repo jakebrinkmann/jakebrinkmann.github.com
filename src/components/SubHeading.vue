@@ -56,7 +56,7 @@ span.sub {
   span.sub {
     position: absolute;
     top: 0;
-    left: 6in;
+    left: 5in;
     width: 250px;
     line-height: 1.3;
   }

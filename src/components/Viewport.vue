@@ -17,9 +17,11 @@ div.bin {
   border: 2px solid #ccc;
   border-radius: 10px;
   padding: 5px;
+  margin: 0 auto;
+  box-sizing: border-box; /* Include padding and border in dimensions */
 
-  width: 8.3in;
-  height: 10.8in;
+  width: 8.5in; /* US Letter width */
+  height: 11in; /* US Letter height */
 
   overflow-y: hidden;
   overflow-x: hidden;

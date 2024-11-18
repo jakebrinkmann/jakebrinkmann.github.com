@@ -4,7 +4,6 @@
       ‹/› with <span class="heart">♥</span>
       from South Dakota © Jake Brinkmann
     </p>
-    <p id="BuildTime">{{ $data.buildTime }}</p>
     <p>
       Except where otherwise noted, content on this site is released under
       <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY-4.0</a>
@@ -15,9 +14,6 @@
 <script>
 const FootFoot = {
   name: "FootFoot",
-  data() {
-    return { buildTime: new Date().toISOString() };
-  },
 };
 export default FootFoot;
 </script>
@@ -56,12 +52,6 @@ export default FootFoot;
     text-decoration: none;
     float: left;
     margin: 0 0.5em;
-  }
-
-  #BuildTime {
-    font-family: "Courier New", Courier, monospace;
-    color: #333333; /* Dark grey color */
-    padding: 5px;
   }
 }
 
