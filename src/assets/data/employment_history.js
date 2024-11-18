@@ -47,7 +47,7 @@ export default {
       },
       responsibilities: [
         "Led a cross-functional team of 20+ engineers, serving as an information radiator and trusted decision-maker.",
-        "Designed a serverless HL7/FHIR ingestion pipeline, ensuring HIPAA-compliant patient awareness from real-time ADT/ORM data.",
+        "Designed a serverless HL7/FHIR ingestion pipeline, ensuring HIPAA and HITRUST compliance for patient awareness from real-time ADT/ORM data.",
         "Designed a REST API for telehealth integration with a POC React app for secure OAuth2 credentialing, accelerating go-to-market and unlocking significant business growth.",
       ],
       software:
