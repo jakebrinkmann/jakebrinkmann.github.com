@@ -69,7 +69,7 @@ export default App;
 
 /* Make selection only highlight as red */
 ::selection {
-  color: red;
+  color: #ff8a8a;
 }
 
 /* Defines Letter size: 8.5 x 11 inches */
