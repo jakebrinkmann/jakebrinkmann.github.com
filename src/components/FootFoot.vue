@@ -43,7 +43,7 @@ export default FootFoot;
   }
 
   .heart {
-    color: red;
+    color: #ff8a8a;
   }
 
   .appendix,

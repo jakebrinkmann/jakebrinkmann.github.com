@@ -7,6 +7,7 @@
       :key="index"
       :href="contact.link"
       class="icons"
+      :aria-label="contact.label"
     >
       <fa-icon :name="contact.icon"></fa-icon>
     </a>

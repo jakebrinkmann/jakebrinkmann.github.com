@@ -46,8 +46,8 @@ export default App;
 /* Global variables for color palette scheme */
 :root {
   --main-bg-color: #222;
-  --main-txt-color: #aaa;
-  --main-a-color: #9ebcff;
+  --main-txt-color: #595959;
+  --main-a-color: #0045db;
   --main-a-hover-bg: #3f48cc;
   --main-highlight-color: #c8ad55;
   --main-btn-highlight: rgba(200, 173, 85, 0.1);

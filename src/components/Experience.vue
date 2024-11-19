@@ -1,9 +1,20 @@
 <template>
-  <div>
-    <h2>Work Experience</h2>
-    <div class="work-experience">
-      <div class="job" v-for="(job, ix) in experience" :key="ix">
-        <div class="job-position">{{ job.title }}</div>
+  <section aria-labelledby="work-experience-heading">
+    <h2 id="work-experience-heading">Work Experience</h2>
+    <div class="work-experience" role="list">
+      <div
+        class="job"
+        v-for="(job, ix) in experience"
+        :key="ix"
+        role="listitem"
+        :aria-labelledby="job.company + ', ' + job.title + '-heading'"
+      >
+        <div
+          class="job-position"
+          :aria-label="job.company + ', ' + job.title + '-heading'"
+        >
+          {{ job.title }}
+        </div>
         <div class="company-team">
           <a :href="'https://' + job.url" target="_blank">{{ job.company }}</a>
           • {{ job.location }}
@@ -28,7 +39,7 @@
         {{ skill }}
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -108,7 +119,7 @@ export default {
   color: #0077c0; /* Adjust color to match the section header */
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .job {
@@ -118,7 +129,7 @@ export default {
 }
 
 .job > *:first-child {
-  margin-top: 0px;
+  margin-top: 5px;
 }
 
 .job-position {
@@ -149,7 +160,7 @@ export default {
 }
 
 .job-description li {
-  margin-bottom: 1px;
+  margin-bottom: 5px;
 }
 
 /* TODO: Skills could maybe be it's own component */

@@ -1,14 +1,15 @@
 <template>
-  <div class="education">
-    <h2>Education</h2>
-    <div class="education-container">
+  <section class="education" aria-labelledby="education-heading">
+    <h2 id="education-heading">Education</h2>
+    <div role="list" class="education-container">
       <div
         v-for="(item, index) in education"
         :key="index"
         class="education-item"
+        role="listitem"
       >
-        <div class="education-detail">
-          <span>{{ item.degree }}, {{ item.GPA }}</span>
+        <div class="education-detail" :aria-labelledby="item.degree">
+          <span :id="item.degree">{{ item.degree }}, {{ item.GPA }}</span>
           <span>
             <a :href="'https://' + item.url" target="_blank">{{
               item.institution
@@ -17,7 +18,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

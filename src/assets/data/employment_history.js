@@ -4,12 +4,21 @@ export default {
   job_searching: true,
   contacts: [
     {
+      label: "Send me an E-Mail",
       link: "mailto:jakebrinkmann@gmail.com",
       icon: "envelope",
     },
-    { link: "tel:16124261440", icon: "phone-alt" },
-    { link: "//github.com/jakebrinkmann", icon: "brands/github" },
-    { link: "//linkedin.com/in/jakebrinkmann", icon: "brands/linkedin" },
+    { label: "Call or Text me", link: "tel:16124261440", icon: "phone-alt" },
+    {
+      label: "Checkout my Github Profile",
+      link: "//github.com/jakebrinkmann",
+      icon: "brands/github",
+    },
+    {
+      label: "Checkout my LinkedIn Profile",
+      link: "//www.linkedin.com/in/jakebrinkmann",
+      icon: "brands/linkedin",
+    },
   ],
   profile: [
     "Jake is a hard working full-stack software engineer and solutions design expert, with almost 15 years of experience utilizing modern cloud-native technologies for building complex, evolving systems running on resource-constrained hardware.",
