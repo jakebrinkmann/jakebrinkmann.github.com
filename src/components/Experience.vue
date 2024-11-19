@@ -6,11 +6,10 @@
         <div class="job-position">{{ job.title }}</div>
         <div class="company-team">
           <a :href="'https://' + job.url" target="_blank">{{ job.company }}</a>
-          &nbsp;<span>({{ job.tagline }})</span>
+          • {{ job.location }}
         </div>
         <div class="date-location">
-          {{ job.duration.start.slice(0, 4) }}
-          ({{ calculateDuration(job.duration) }}) • {{ job.location }}
+          {{ calculateDuration(job.duration) }}
         </div>
         <ul class="job-description">
           <li v-for="(resp, iy) in job.responsibilities.slice(0, 3)" :key="iy">
@@ -23,7 +22,7 @@
     <div class="skills">
       <div
         class="skill-item"
-        v-for="skill in uniqueSkills.slice(0, 28)"
+        v-for="skill in uniqueSkills.slice(0, 35)"
         :key="skill"
       >
         {{ skill }}
@@ -40,23 +39,38 @@ export default {
   },
   methods: {
     calculateDuration: (duration) => {
-      const start = new Date(duration.start);
-      const end = new Date(duration.end);
+      const parseDate = (dateStr) => {
+        const [year, month, day] = dateStr.split("-").map(Number);
+        return new Date(Date.UTC(year, month - 1, day));
+      };
 
-      let years = end.getFullYear() - start.getFullYear();
-      let months = end.getMonth() - start.getMonth();
+      const start = parseDate(duration.start);
+      const end = parseDate(duration.end);
+
+      let years = end.getUTCFullYear() - start.getUTCFullYear();
+      let months = end.getUTCMonth() - start.getUTCMonth();
       if (months < 0) {
         years--;
         months += 12;
       }
 
-      if (!years) {
-        return `${months} mo`;
-      } else if (months) {
-        return `${years} yrs, ${months} mo`;
+      const formatYear = (date) => `${date.getUTCFullYear()}`;
+      const formatMonth = (date) =>
+        String(date.getUTCMonth() + 1).padStart(2, "0");
+
+      let dur = "";
+      if (years === 0) {
+        dur = `${months} mo`;
+      } else if (months > 0) {
+        dur = `${years} yrs, ${months} mo`;
       } else {
-        return `${years} yrs`;
+        dur = `${years} yrs`;
       }
+
+      return [
+        `${formatMonth(start)}/${formatYear(start)}`,
+        `${formatMonth(end)}/${formatYear(end)} (${dur})`,
+      ].join(" — ");
     },
   },
   computed: {

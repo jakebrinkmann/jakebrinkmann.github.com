@@ -46,12 +46,12 @@ export default {
         end: "2024-11-01",
       },
       responsibilities: [
-        "Led a cross-functional team of 20+ engineers, serving as an information radiator and trusted decision-maker.",
-        "Designed a serverless HL7/FHIR ingestion pipeline, ensuring HIPAA and HITRUST compliance for patient awareness from real-time ADT/ORM data.",
-        "Designed a REST API for telehealth integration with a POC React app for secure OAuth2 credentialing, accelerating go-to-market and unlocking significant business growth.",
+        "Designed, developed, and deployed a HIPAA and HITRUST compliant serverless HL7/FHIR data ingestion pipeline, for real-time patient awareness.",
+        "Accelerated telehealth go-to-market and unlocked significant business growth by implementing an full-stack SmartTV Control Application using REST and WebSocket APIs as well as a SAML-authenticated React website.",
+        "Quickly lifted-and-shifted a legacy system into a multitenant Cloud solution on top of ECS Fargate and other Managed Services (AMQP, Aurora, Redis)",
       ],
       software:
-        "AWS-CDK, Python, PostgreSQL, ReactJS, DynamoDB, OpenAPI, Docker, Django, Celery, Typescript, SAML",
+        "AWS-CDK, Python, PostgreSQL, ReactJS, DynamoDB, OpenAPI, Docker, Django, Celery, Typescript, SAML, OAuth2-JWT, AWS-EventBridge",
     },
     {
       title: "Software Systems Engineer II",
@@ -67,7 +67,7 @@ export default {
       responsibilities: [
         "Built the flagship Cloud Configuration product, using React and Python, allowing hotel staff to manage in-room television devices.",
         "Developed a lightweight, configuration-driven integration engine linking on-site and cloud PMS, enabling real-time guest awareness and seamless in-room purchase billing.",
-        "Enhanced quality assurance by creating automated and manual simulation tools to validate functionality and prevent regressions during pre-release smoke testing.",
+        "Created automated and manual simulation tools to validate functionality and prevent regressions during pre-release smoke testing.",
       ],
       software:
         "Python, AWS-Lambda, ReactJS, AWS-Cognito, OAuth2-JWT, Docker, Gitlab-CI, Postman",
@@ -103,7 +103,7 @@ export default {
       employment: "full-time",
       duration: {
         start: "2016-12-01",
-        end: "2018-05-01",
+        end: "2018-06-01",
       },
       responsibilities: [
         // "Supported the Technical Services Support Contract (TSSC) for the USGS Earth Resources Observation and Science (EROS) data center.",
